@@ -1,64 +1,84 @@
-.header {
-    background: #f44;
-    height: 40px;
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
-.footer {
+body {
+    background-color: blanchedalmond;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar {
     position: fixed;
-    bottom:0;
+    height: 83%;
+    width: 200px;
+    background-color: white;
+    padding: 100px 30px;
+    border-right-style: solid;
+    border-color:#ef5d57 ;
+}
+
+.wrapper .main-content {
+    width: 100%;
+    margin: 100px 300px 249px ;
+}
+
+.main-content img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+nav {
+    background-color:#ef5d57;
+}
+
+footer {
+    padding: 10px 30px;
+    background-color:#ef5d57;
+    color: white;
+}
+
+.navbar-nav {
+    padding-left: 50px;
+}
+
+.wrapper .main-content-links {
+    width: 100%;
+    margin: 100px 300px 370px ;
+}
+
+.ulist {
+    padding-left: 40px;
+}
+
+button {
+    margin-right: 30px;
+}
+
+.wrapper .main-content-tutlinks {
+    width: 100%;
+    margin: 100px 300px 410px;
+ }
+
+ .footer {
+    position: fixed;
+    bottom: 0;
     height: 40px;
     width: 100%;
     background: #f44;
 }
 
-.main {
-    height: 100%;
-}
-
-.content {
-    background-color: lightgrey;
-    bottom: 40px;
-    top:0px;
-    right:0px;
-}
-
-
-
-/* Sidebar Styles */
-.sidebar {
-    position: fixed;
-    left: 0;
-}
-
-.sidebar-nav {
-    list-style: none;
-}
-
-.sidebar-nav p {
-    text-indent: 60px;
-    line-height: 40px;
-}
-
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: gray;
-    /* color: #999999; */
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #f44;
-    /* background: rgba(255,255,255,0.2); */
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    color: #f44;
-    text-decoration: none;
+ .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
 }
